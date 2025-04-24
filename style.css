@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* ... (rest of your CSS from before) ... */
+
+#hero .hero-content {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Vertically aligns items */
+    padding: 50px;
+}
+
+.hero-image {
+    margin-right: 30px; /* Space between image and text */
+}
+
+.hero-image img {
+    width: 150px; /* Adjust image size as needed */
+    height: 150px; /* Adjust image size as needed */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+.hero-text {
+  text-align: left; /* Align text to the left within its container */
+}
+
+/* ... (rest of your CSS) ... */

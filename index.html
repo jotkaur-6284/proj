@@ -1,0 +1,496 @@
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="maind w3-container">
+
+    <!-- first Ai tutor -->
+    <div class=" mySlides w3-animate-left">
+      <img src="logoo.PNG" class="logo">
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <div class="nav">
+        <div class="container menu">
+          <div class="btn"><a href="index.html">Home</a></div>
+          <div class="btn"><a href="chat.html">AIChat</a></div>
+          <div class="btn"><a href="teacher.html">Online Teacher</a></div>
+          <div class="btn"><a href="login.html">Login</a></div>
+          <svg class="outline" overflow="visible" width="400" height="60" viewBox="0 0 400 60"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect class="rect" pathLength="100" x="0" y="0" width="400" height="60" fill="transparent" stroke-width="5">
+            </rect>
+          </svg>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var menuToggle = document.getElementById("menu-toggle");
+          var menu = document.getElementById("menu");
+
+          if (menuToggle && menu) {
+            menuToggle.addEventListener("click", function () {
+              menu.classList.toggle("active");
+            });
+          }
+        });
+      </script>
+      <div class="container2">
+        <div class="item" style="--i:0;"></div>
+        <div class="item" style="--i:1;"></div>
+        <div class="item" style="--i:2;"></div>
+        <div class="item" style="--i:3;"></div>
+        <div class="item" style="--i:4;"></div>
+        <div class="item" style="--i:5;"></div>
+        <div class="item" style="--i:6;"></div>
+        <div class="item" style="--i:7;"></div>
+        <div class="item" style="--i:8;"></div>
+        <div class="item" style="--i:9;"></div>
+        <div class="item" style="--i:10;"></div>
+        <div class="item" style="--i:11;"></div>
+        <div class="item" style="--i:12;"></div>
+        <div class="item" style="--i:13;"></div>
+        <div class="item" style="--i:14;"></div>
+        <div class="item" style="--i:15;"></div>
+        <div class="item" style="--i:16;"></div>
+        <div class="item" style="--i:17;"></div>
+        <div class="item" style="--i:18;"></div>
+        <div class="item" style="--i:19;"></div>
+        <div class="item" style="--i:20;"></div>
+      </div>
+      <!-- search bar -->
+      <div class="centr">
+        <div class="card">
+          <div class="loader">
+            Search on AiMentor
+            <div class="words">
+              <span class="word">Books</span>
+              <span class="word">Chapters</span>
+              <span class="word">Classes</span>
+              <span class="word">Notes</span>
+              <span class="word">Teacher</span>
+            </div>
+          </div>
+        </div>
+        <div class="after">
+          <p class="ps">AI assistant here to provide information, answer of questions.Enter keywords to explore our
+            resources</p>
+        </div>
+        <!-- From Uiverse.io by Amankrah -->
+        <div class="galaxy"></div>
+        <div id="search-container">
+          <div class="nebula"></div>
+          <div class="starfield"></div>
+          <div class="cosmic-dust"></div>
+          <div class="cosmic-dust"></div>
+          <div class="cosmic-dust"></div>
+          <div class="stardust"></div>
+          <div class="cosmic-ring"></div>
+          <div id="main">
+            <input class="input search-inpu" name="text" id="searchBox" type="text" placeholder="Search..." />
+            <div id="input-mask"></div>
+            <div id="cosmic-glow"></div>
+            <div class="wormhole-border"></div>
+            <div id="wormhole-icon">
+              <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#a9c7ff" fill="none"
+                height="24" width="24" viewBox="0 0 24 24">
+                <circle r="10" cy="12" cx="12"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+
+            <script>document.getElementById("searchBox").addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                  let searchText = this.value.trim();
+                  if (searchText !== "") {
+                    localStorage.setItem("searchMessage", searchText); // Store message
+                    window.open("chat.html", "_blank"); // Open chatbot in new tab
+                  }
+                }
+              });</script>
+            <div id="search-icon">
+              <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="url(#cosmic-search)"
+                fill="none" height="24" width="24" viewBox="0 0 24 24">
+                <circle r="8" cy="11" cx="11"></circle>
+                <line y2="16.65" x2="16.65" y1="21" x1="21"></line>
+                <defs>
+                  <linearGradient gradientTransform="rotate(45)" id="cosmic-search">
+                    <stop stop-color="#a9c7ff" offset="0%"></stop>
+                    <stop stop-color="#6e8cff" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second teacher tutor -->
+    <div class="mySlides w3-animate-right">
+      <div class="teach">
+        <img src="logoo.PNG" class="logo go">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="nav">
+          <div class="container" id="menu">
+            <div class="btn"><a href="index.html">Home</a></div>
+            <div class="btn"><a href="chat.html">AIChat</a></div>
+            <div class="btn"><a href="teacher.html">Online Teacher</a></div>
+            <div class="btn"><a href="login.html">Login</a></div>
+            <svg class="outline" overflow="visible" width="400" height="60" viewBox="0 0 400 60"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect class="rect" pathLength="100" x="0" y="0" width="400" height="60" fill="transparent"
+                stroke-width="5">
+              </rect>
+            </svg>
+          </div>
+        </div>
+        <!-- <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              var menuToggle = document.getElementById("menu-toggle");
+              var menu = document.getElementById("menu");
+              
+              if (menuToggle && menu) {
+                  menuToggle.addEventListener("click", function () {
+                      menu.classList.toggle("active");
+                  });
+              }
+          });
+      </script> -->
+        <!-- navbar end -->
+        <div class="teachone">
+          <pre>Find Your Perfect<br>     Teacher</pre>
+        </div>
+        <div class="teachtwo">
+          <div class="search-container">
+            <div class="search-bar">
+              <input type="text" class="search-input" id="secsearch" placeholder="Search Subject" />
+              <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <script>document.getElementById("secsearch").addEventListener("keypress", function (event) {
+              if (event.key === "Enter") {
+                let searchText = this.value.trim();
+                if (searchText !== "") {
+                  // localStorage.setItem("searchMessage", searchText); // Store message
+                  window.open("teacher.html"); // Open chatbot in new tab
+                }
+              }
+            });</script>
+        </div>
+        <div class="teachthree">
+          <div class="tthreeo th"><i class="fa-sharp-duotone fa-solid fa-book fa-3x"></i><br>10TH</div>
+          <div class="tthreet th"><i class="fa-sharp-duotone fa-solid fa-school fa-3x"></i><br>SCHOOL</div>
+          <div class="tthreeth th"><i class="fa-sharp-duotone fa-solid fa-graduation-cap fa-3x"></i><br>COLLEGE</div>
+          <div class="tthreef th"><i class="fa-sharp-duotone fa-solid fa-calendar-days fa-3x"></i><br>EXAM</div>
+          <div class="tthreefi th"><i class="fa-sharp-duotone fa-solid fa-desktop fa-3x"></i><br>COMPUTER</div>
+          <div class="tthrees th"><i class="fa-sharp-duotone fa-solid fa-suitcase-medical fa-3x"></i><br>MEDICAL</div>
+          <div class="tthreese th"><i class="fa-duotone fa-solid fa-chart-simple fa-3x"></i><br>MARKET</div>
+        </div>
+        <div class="teachfour"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var myIndex = 0;
+    var slideInterval;
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1; }
+      x[myIndex - 1].style.display = "block";
+
+      slideInterval = setTimeout(carousel, 5000); // Start the slideshow
+    }
+
+    function stopSlideshow() {
+      clearTimeout(slideInterval); // Stop sliding when user types
+    }
+
+    function resumeSlideshow() {
+      clearTimeout(slideInterval); // Clear any existing timeout
+      slideInterval = setTimeout(carousel, 4000); // Restart the slideshow
+    }
+
+    // Attach event listeners to all input fields inside slides
+    document.addEventListener("DOMContentLoaded", function () {
+      var inputs = document.querySelectorAll(".mySlides input");
+
+      inputs.forEach(input => {
+        input.addEventListener("focus", stopSlideshow);  // Stop when focused
+        input.addEventListener("input", stopSlideshow);  // Stop when typing
+        input.addEventListener("blur", resumeSlideshow); // Resume when focus is lost
+      });
+    });
+
+    carousel(); // Start the slideshow
+  </script>
+
+  </script>
+  <!-- rotating cube -->
+  <div class="sec">
+
+    <div class="dot">
+      <div class="mn1 dt">
+        <div class="n4" style="float: inline-end; background-color: #3b32bfcf;"></div>
+      </div>
+      <div class="mn2 dt">
+        <div class="n5" style="float:right; background-color: #3930ba96;"></div>
+      </div>
+      <div class="mn3 dt">
+        <div class="n10" style="float: left;background-color: #5d54d2cf;"></div>
+      </div>
+      <div class="mn1 dt">
+        <div class="n8" style="float:right; margin-top:80%; background-color:#514c92"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="d" style="color: black;"><b>AI Mentor: Your Guide to the Future</b></div>
+  <div class="scrol">
+
+    <div class="wrapper"><b>
+        <div class="inner" style="--quantity: 10;">
+          <div class="cardd" style="--index: 0;">
+            <div class="img" style='background-image: url("images/Ai\ \(1\).jpg");'></div>
+            <div class="cont">Personalized Learning</div>
+          </div>
+          <div class="cardd" style="--index: 1;">
+            <div class="img" style='background-image: url("images/Ai\ \(2\).jpg");'></div>
+            <div class="cont">Hands-On Projects</div>
+          </div>
+          <div class="cardd" style="--index: 2;">
+            <div class="img" style='background-image: url("images/Ai\ \(3\).jpg");'></div>
+            <div class="cont">Career Guidance</div>
+          </div>
+          <div class="cardd" style="--index: 3;">
+            <div class="img" style='background-image: url("images/Ai\ \(4\).jpg");'></div>
+            <div class="cont">Access to Resources and Tools</div>
+          </div>
+          <div class="cardd" style="--index: 4;">
+            <div class="img" style='background-image: url("images/Ai\ \(7\).jpg");'></div>
+            <div class="cont">Creative Writing</div>
+          </div>
+          <div class="cardd" style="--index: 5;">
+            <div class="img" style='background-image: url("images/Ai\ \(8\).jpg");'></div>
+            <div class="cont">Natural Language Understanding</div>
+          </div>
+          <div class="cardd" style="--index: 6;">
+            <div class="img" style='background-image: url("images/Ai\ \(1\).jpg");'></div>
+            <div class="cont">Language Translation</div>
+          </div>
+          <div class="cardd" style="--index: 7;">
+            <div class="img" style='background-image: url("images/Ai\ \(2\).jpg");'></div>
+            <div class="cont">Conversational Agent</div>
+          </div>
+          <div class="cardd" style="--index: 8;">
+            <div class="img" style='background-image: url("images/Ai\ \(3\).jpg");'></div>
+            <div class="cont">Learning and Tutoring</div>
+          </div>
+          <div class="cardd" style="--index: 9;">
+            <div class="img" style='background-image: url("images/Ai\ \(4\).jpg");'></div>
+            <div class="cont">24/7 Availability</div>
+
+          </div>
+        </div>
+      </b>
+    </div>
+  </div>
+
+  <!-- about ai chatbot -->
+  <div class="chatone">
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+
+    <img src="logoo.PNG" alt="logo" class="logo l">
+    <div id="one">AI CHATBOT</div>
+    <div id="two">At MentorMotion, we strive to transform education through innovative technology and creative
+      solutions. Our goal is to empower educators and learners alike, making learning more accessible and enjoyable.
+    </div>
+    <div class="mn">
+      <div class="mn1 n">
+        <div class="n10 same" style="background-image: url('images/aipic\ \(1\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn2 n">
+        <div class="n1 same" style="background-image: url('images/aipic\ \(2\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn3 n">
+        <div class="n2 same" style="background-image: url('images/aipic\ \(3\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn4 n">
+        <div class="n3 same" style="background-image: url('images/aipic\ \(4\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn5 n">
+        <div class="n4 same" style="background-image: url('images/aipic\ \(5\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn6 n">
+        <div class="n5 same"
+          style="float: right;background-image: url('images/aipic\ \(6\).jpg'); background-size: cover;">
+        </div>
+      </div>
+      <div class="mn7 n">
+        <div class="n6 same" style="background-image: url('images/aipic\ \(7\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn8 n">
+        <div class="n7 same"
+          style="float: right;background-image: url('images/aipic\ \(8\).jpg'); background-size: cover;">
+        </div>
+      </div>
+      <div class="mn9 n">
+        <div class="n8 same" style="background-image: url('images/aipic\ \(9\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn10 n">
+        <div class="n10 same" style="background-image: url('images/Ai\ \(1\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn7 n">
+        <div class="n1 same" style="background-image: url('images/Ai\ \(2\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn8 n">
+        <div class="n3 same" style="float: left;background-image: url('images/Ai\ \(3\).jpg'); background-size: cover;">
+        </div>
+      </div>
+      <div class="mn9 n">
+        <div class="n2 same" style="background-image: url('images/Ai\ \(7\).jpg'); background-size: cover;"></div>
+      </div>
+      <div class="mn10 n">
+        <div class="n4 same" style="background-image: url('images/Ai\ \(4\).jpg'); background-size: cover;"></div>
+      </div>
+      <!-- cube -->
+      <div class="cube cub">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+    <a href="teacher.html"> <div style="height: 20vh;width: 21vh;  margin-top: 35vh;margin-left: -70vh;"><button href="teacher.html" style="height:10vh;width:25vh;border-radius:20px;font-size: x-large;background:black;color: white;">AIChat</button></div>
+      </a>
+    </div><br><br>
+    
+    <center>
+      <div class="thead" style="font-size: 500%;">Online Tutoring With Real Teachers</div>
+      <div class="tthead" style="font-size: 200%;">Instant online tutoring - all subjects, anytime, anywhere</div>
+    </center>
+  </div>
+  <div class="tm">
+    <div class="tstart">
+      <img src="Vetores__fotos_e_arquivos_PSD_de_Student___Download_gratuito-removebg-preview-maskai.png" alt=""
+        style="margin-left: 16%; margin-top: -35px; margin-bottom: 11vh;">
+    </div>
+    
+
+  <!-- teacher compair student -->
+
+  <div class="compair"style="background: linear-gradient(180deg, #1c2452, #05071b, #2a3875); border: 0.5px solid black; height:130vh">
+    
+  <center><div class="heading">Join Guide Success</div></center>
+    <!-- cube -->
+    <div class="cube cub">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+    <div class="ffin-container">
+      <div class="ffin-card ffin-teacher-card">
+        <img src="images/teacher.jpg" alt="Teacher">
+        <div class="ffin-name">Salman muktadir</div>
+        <div class="ffin-role">Best Teacher • 15 Awards</div>
+      </div>
+
+      <div class="ffin-card ffin-student-card">
+        <img src="images/stu.jpg" alt="Student">
+        <div class="ffin-name">Tanzing Sakib</div>
+        <div class="ffin-role">Best Student • 9 Awards</div>
+      </div>
+
+      <div class="ffin-connector">
+        <svg viewBox="88 34 555 12" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-6,-95 C530,0 240,59 737,193" stroke="black" stroke-width="5" fill="none" />
+
+        </svg>
+      </div>
+      <div class="ffin-switch-icon">⇄</div>
+          <!-- button -->
+     <center><a href="chat.html">
+      <button href="chat.html" class="button" style="--clr: rgb(66, 39, 130)">
+        <span class="button__icon-wrapper">
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg"
+            width="10"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+      
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            width="10"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg button__icon-svg--copy"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        Explore All
+      </button>
+      </a>
+      </center>
+      <!-- button end -->
+    </div>
+
+  </div>
+  
+</div>
+  <!-- end compair -->
+  <footer class="footer">
+    <div class="footer-left">
+        © 2025 Company, Inc
+    </div>
+    <div class="footer-center">
+        <div class="footer-logo"><img src="logoo.PNG" alt="loho" height="50vh" width="50vh"></div>
+    </div>
+    <div class="footer-right">
+        <a href="index.html">Home</a>
+        <a href="chat.html">Ai Chat</a>
+        <a href="teacher.html">Teachers</a>
+        <a href="#">login</a>
+        <a href="#">About</a>
+    </div>
+</footer>
+</body>
